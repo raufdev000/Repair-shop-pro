@@ -2,10 +2,11 @@
 
   .font-ui {
   font-family: 'Poppins', sans-serif;
+  
 }
 
 .carousel-wrapper {
-  background: #f8f9fa;
+  background: #fdfcfc;
   padding-top: 20px;
 }
 
@@ -35,7 +36,7 @@
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: all 0.35s ease;
-  background: #fff;
+  background: #fdfbfb;
 }
 
 .custom-card img {
@@ -52,17 +53,19 @@
 
 /* BUTTON STYLE */
 .custom-btn {
-  background-color: #e53935;
-  color: white;
+  background-color: #f50d0d;
+  color: red;
   border-radius: 30px;
   padding: 8px 20px;
   transition: all 0.3s ease;
   border: none;
+  width: 100%;
 }
 
 /* Button changes when card is hovered */
 .custom-card:hover .custom-btn {
   background-color: #1e88e5;
+  color: #d2e4f3;
 }
 
 .appointment-card {
@@ -390,6 +393,7 @@
 }
 .font-ui {
   font-family: 'Poppins', sans-serif;
+font-size: larger;
 }
 
 /* LEFT SIDE */
@@ -510,7 +514,7 @@
       flex: 0 0 16.66%; /* 6 cards per view */
       max-width: 200px;  /* max width for professional look */
       height: 250px;     /* fixed height */
-      background: #fff;
+      background: #ecebeb;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       overflow: hidden;
