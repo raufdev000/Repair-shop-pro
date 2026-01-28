@@ -332,6 +332,7 @@
 
 @media (max-width: 490px) {
   .infinite-carousel {
+    overflow: hidden;
     margin-top: -50px; 
   }
 }
@@ -886,7 +887,12 @@ font-size: larger;
   width: auto;
 }
 
-/* Extra large screens par thora aur premium look */
+@media (max-width: 551px) {
+  .col-md-3 img {
+    height: 110px;
+  }
+}
+
 @media (min-width: 1200px) {
   .col-md-3 img {
     height: 110px;
