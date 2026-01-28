@@ -1,3 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: clip; 
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+section, header, .hero-section {
+  overflow-x: clip;
+}
+[class*="slide"],
+[class*="animate"],
+.carousel-track {
+  will-change: transform;
+  overflow-x: clip;
+}
+.position-absolute,
+.position-relative {
+  max-width: 100%;
+  overflow-x: clip;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
 
   .font-ui {
@@ -12,8 +42,7 @@
 
 .infinite-carousel {
   position: relative;
-  top: -40px;
-    overflow: hidden;
+   overflow-x: clip;
       backface-visibility: hidden;
 }
 
@@ -99,7 +128,7 @@
 }
 
 .submit-btn {
-  background: linear-gradient(45deg, #e53935, #ff7043);
+  background: linear-gradient(45deg, #e53935, #f73b02);
   color: white;
   border: none;
   padding: 12px;
@@ -184,11 +213,18 @@
   margin: 0;
   font-weight: 600;
   transition: color 0.3s ease;
+  
 }
 
 /* Hover heading + entire item */
 .modern-faq .faq-item:hover {
-  background-color: #1e88e5; /* blue hover background */
+ background: linear-gradient(
+    135deg,        /* Angle for professional look */
+    #1e88e5 0%,    /* Blue start */
+    #42a5f5 40%,   /* Lighter blue blending */
+    #ef5350 60%,   /* Light red blending */
+    #e53935 100%   /* Red end */
+  ); /* blue hover background */
   color: #fff;
 }
 
@@ -215,7 +251,13 @@
 
 /* Open FAQ background */
 .modern-faq .faq-item.open {
-  background-color: #1e88e5; 
+  background: linear-gradient(
+    135deg,        /* Angle for professional look */
+    #1e88e5 0%,    /* Blue start */
+    #42a5f5 40%,   /* Lighter blue blending */
+    #ef5350 60%,   /* Light red blending */
+    #e53935 100%   /* Red end */
+  );
   color: #fff;
 }
 
@@ -772,7 +814,7 @@ font-size: larger;
   justify-content: center;
 }/* PERFECT IMAGE FIX */
 .hero-right img {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   object-fit: cover;          /* industry standard */
  /* smart crop */
@@ -976,6 +1018,13 @@ font-size: larger;
     }   
 /* Default: jo tum already use kar rahe ho – untouched */
 
+/* Small screens fix */
+@media (max-width: 576px) {
+  .form-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 /* Small screens fix */
 @media (max-width: 576px) {
   .form-card {
