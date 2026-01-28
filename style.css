@@ -13,6 +13,7 @@
 .infinite-carousel {
   position: relative;
   top: -40px;
+    overflow: hidden;
 }
 
 .carousel-track {
@@ -876,6 +877,19 @@ font-size: larger;
   }
   .navbar-nav {
     text-align: left;
+  }
+}
+
+/* Footer / column logo bigger on all screens */
+.col-md-3 img {
+  height: 100px;     /* pehle 60 tha, ab bada */
+  width: auto;
+}
+
+/* Extra large screens par thora aur premium look */
+@media (min-width: 1200px) {
+  .col-md-3 img {
+    height: 110px;
   }
 }
 
